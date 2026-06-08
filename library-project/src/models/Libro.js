@@ -59,7 +59,6 @@ class Libro {
     }
 
     // Métodos
-
     prestar() {
         if (this._disponible) {
             this._disponible = false;
