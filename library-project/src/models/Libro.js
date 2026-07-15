@@ -7,7 +7,7 @@ class Libro {
         this._editorial = editorial;
         this._isbn = isbn;
         this._disponible = disponible;
-        this._noInventario = noInventario;
+        this._id = noInventario;
     }
 
     get titulo() {
@@ -26,8 +26,8 @@ class Libro {
         return this._isbn;
     }
 
-    get noInventario() {
-        return this._noInventario;
+    get id() {
+        return this._id;
     }
 
     set titulo(nuevoTitulo) {
@@ -54,8 +54,8 @@ class Libro {
         this._disponible = nuevoDisponible;
     }
 
-    set noInventario(nuevoNoInventario) {
-        this._noInventario = nuevoNoInventario;
+    set id(nuevoId) {
+        this._id = nuevoId;
     }
 
     // Métodos
