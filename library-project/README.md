@@ -1,16 +1,66 @@
-# React + Vite
+# Library Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con React + Vite para gestionar operaciones básicas de una biblioteca, como el registro de libros, usuarios y préstamos.
 
-Currently, two official plugins are available:
+## Requisitos previos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Antes de comenzar, asegúrate de tener instalado:
 
-## React Compiler
+- Node.js 20 o superior
+- npm 10 o superior
+- Git
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Clonar el proyecto
 
-## Expanding the ESLint configuration
+```bash
+git clone <url-del-repositorio>
+cd library-project
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalar dependencias
+
+```bash
+npm install
+```
+
+## Ejecutar en modo desarrollo
+
+```bash
+npm run dev
+```
+
+Una vez iniciada la aplicación, abre la URL que aparezca en la terminal, por ejemplo:
+
+```text
+http://localhost:5173/
+```
+
+## Construir para producción
+
+```bash
+npm run build
+```
+
+El resultado de la compilación se generará en la carpeta `dist/`.
+
+## Vista previa de la build
+
+```bash
+npm run preview
+```
+
+## Revisar calidad de código
+
+```bash
+npm run lint
+```
+
+## Estructura principal
+
+- `src/` Contiene los componentes, estilos y lógica principal de la aplicación.
+- `public/` Archivos estáticos.
+- `vite.config.js` Configuración del entorno de Vite.
+
+## Notas
+
+No se requieren variables de entorno adicionales para ejecutar esta aplicación en su configuración básica.
